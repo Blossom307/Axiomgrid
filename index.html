@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axiom Grid | Industrial 3D Intelligence Platform</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/AXIOMGRIDLOGO.png" type="image/x-icon">
+    
+</head>
+<body>
+
+    <canvas id="wireframe-grid"></canvas>
+
+    <nav>
+        <div class="brand-cluster">
+            <div class="status-dot"></div>
+            <div class="logo">Axiom Grid</div>
+        </div>
+        <div class="nav-links">
+            <a href="#platform">Platform</a>
+            <a href="#engine">Nexus-3D</a>
+            <a href="#projects">Projects</a>
+            <a href="#research">Research</a>
+            <a href="#contact">Company</a>
+        </div>
+        <button class="mobile-menu-btn" id="menu-trigger">[ MENU ]</button>
+    </nav>
+
+    <div class="system-overlay" id="mobile-hud">
+        <div class="overlay-label">SECURE LINK INITIALIZED</div>
+        <div class="overlay-links">
+            <a href="#platform" class="hud-link">Platform</a>
+            <a href="#engine" class="hud-link">Nexus-3D</a>
+            <a href="#projects" class="hud-link">Projects</a>
+            <a href="#research" class="hud-link">Research</a>
+            <a href="#contact" class="hud-link">Company</a>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="sys-label"><span>SYS.</span> NEXUS-3D ENGINE // V4.2</div>
+            <h1>Engineering Intelligence<br>for the Physical World.</h1>
+            <p>A unified 3D platform for construction systems, robotics simulation, and real-world automation control.</p>
+            <div class="btn-group">
+                <button class="btn btn-primary">Request Demo</button>
+                <button class="btn btn-secondary">Explore Platform</button>
+            </div>
+        </div>
+        
+        <div class="cad-viewport">
+            <div class="viewport-label">SIMULATION: ACTIVE</div>
+            <canvas id="structural-model"></canvas>
+            <div class="viewport-coords" id="coords-display">X: 0.00 Y: 0.00 Z: 0.00</div>
+        </div>
+    </section>
+
+
+
+<section id="platform" class="system-core">
+        <div class="section-header">
+            <h2 class="section-title">Core Infrastructure</h2>
+            <div class="section-meta">NEXUS-3D / SYSTEM ARCHITECTURE</div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-panel">
+                <span class="feature-index">[SYS.01]</span>
+                <h3 class="feature-title">Parametric Structural<br>Modeling Engine</h3>
+                <p class="feature-desc">Define complex architectural geometries through variable-driven rule sets, ensuring real-time structural and material compliance across the entire project lifecycle.</p>
+            </div>
+            
+            <div class="feature-panel">
+                <span class="feature-index">[SYS.02]</span>
+                <h3 class="feature-title">Real-Time Robotics<br>Simulation Environment</h3>
+                <p class="feature-desc">Test, optimize, and deploy autonomous robotic pathing within a 1:1 digital replica of the physical construction environment before hardware is ever activated.</p>
+            </div>
+
+            <div class="feature-panel">
+                <span class="feature-index">[SYS.03]</span>
+                <h3 class="feature-title">Multi-Physics<br>Stress Analysis</h3>
+                <p class="feature-desc">Simulate load-bearing tolerances, thermal dynamics, and temporal material fatigue across integrated kinetic systems using our proprietary physics engine.</p>
+            </div>
+
+            <div class="feature-panel">
+                <span class="feature-index">[SYS.04]</span>
+                <h3 class="feature-title">Digital Twin<br>Synchronization</h3>
+                <p class="feature-desc">Maintain continuous, millisecond-latency bi-directional telemetry between the physical job site hardware and the cloud-based spatial model.</p>
+            </div>
+
+            <div class="feature-panel">
+                <span class="feature-index">[SYS.05]</span>
+                <h3 class="feature-title">Automated Fabrication<br>Path Optimization</h3>
+                <p class="feature-desc">Instantly generate optimized, machine-readable G-code and robotic instructions directly from architectural primitives for seamless CNC and robotic assembly.</p>
+            </div>
+
+            <div class="feature-panel">
+                <span class="feature-index">[SYS.06]</span>
+                <h3 class="feature-title">Cross-Discipline<br>Data Integration Layer</h3>
+                <p class="feature-desc">Unify MEP (Mechanical, Electrical, Plumbing), structural, and architectural datasets into a single, conflict-free coordinate system.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="engine" class="nexus-engine">
+        <div class="section-header" style="margin-bottom: 120px;">
+            <h2 class="section-title">The Nexus-3D Architecture</h2>
+            <div class="section-meta">STACK PROPAGATION / LAYERS 01-03</div>
+        </div>
+
+        <div class="stack-container">
+            <div class="stack-card">
+                <span class="stack-layer">LAYER 01 // THE PERCEPTION MATRIX</span>
+                <h3 class="stack-title">Real-Time Spatial Ingestion</h3>
+                <p class="stack-desc">Axiom Grid dynamically ingests raw LiDAR, photogrammetry, and CAD outputs, compiling them into a unified, conflict-free coordinate system. The physical environment is digitized with sub-millimeter accuracy before a single structural element is deployed.</p>
+            </div>
+
+            <div class="stack-card">
+                <span class="stack-layer">LAYER 02 // THE PHYSICS CORE</span>
+                <h3 class="stack-title">Kinetic Load Simulation</h3>
+                <p class="stack-desc">Every element is subjected to aggressive multi-physics stress testing. We simulate gravitational sheer, thermal expansion, and kinetic stress across automated assembly paths to guarantee structural integrity prior to hardware execution.</p>
+            </div>
+
+            <div class="stack-card">
+                <span class="stack-layer">LAYER 03 // PHYSICAL EXECUTION</span>
+                <h3 class="stack-title">Automated G-Code Compilation</h3>
+                <p class="stack-desc">The digital twin bypasses manual translation entirely. The platform instantly generates optimized, machine-readable fabrication instructions, streaming direct telemetry to on-site robotic deployment systems.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="deployments">
+        <div class="deployments-list">
+            <div class="section-header" style="margin-bottom: 60px;">
+                <h2 class="section-title">Active Deployments</h2>
+                <div class="section-meta">LIVE TELEMETRY / GLOBAL PROJECTS</div>
+            </div>
+
+            <div class="project-item" id="proj-01">
+                <div class="project-meta">STATUS: PILOT DEPLOYMENT // TOKYO, JP</div>
+                <div class="project-title">Autonomous Tower Assembly</div>
+                <div class="project-desc">A 40-story commercial structure assembled by a swarm of synchronized robotic cranes, dictated entirely by Axiom Grid's spatial core.</div>
+            </div>
+
+            <div class="project-item" id="proj-02">
+                <div class="project-meta">STATUS: SIMULATION PHASE // OSLO, NO</div>
+                <div class="project-title">Robotic Bridge Fabrication</div>
+                <div class="project-desc">Real-time load balancing and micro-adjustments for a modular suspension bridge. The digital twin predicts and counters material fatigue autonomously.</div>
+            </div>
+
+            
+        </div>
+
+        <div class="deployments-visual">
+            <div id="three-canvas"></div>
+            <div class="visual-overlay-data" style="position: absolute; bottom: 40px; right: 40px; font-family: var(--font-mono); font-size: 10px; color: #8E96A0; text-align: right; pointer-events: none;">
+                <span style="color: var(--sensor-red);">[LIVE]</span> NEURAL MESH ACTIVE<br>
+                NODES: 4,096 // LATENCY: 1.2ms
+            </div>
+        </div>
+    </section>
+
+    <section id="environments" class="workspace-gallery">
+        <div class="section-header" style="margin-bottom: 60px;">
+            <h2 class="section-title">Simulation Environments</h2>
+            <div class="section-meta">DIGITAL TWIN WORKSPACES / ACTIVE RENDERS</div>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-card">
+                <div class="gallery-img-container">
+                    <img src="images/twincmdcentre.png" alt="Digital Twin Command Center">
+                    <div class="laser-scanner"></div>
+                </div>
+                <div class="gallery-label">
+                    <span class="label-id">ENV_01</span>
+                    <span class="label-name">Digital Twin Command Center</span>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-img-container">
+                    <img src="images/arfbay.png" alt="Automated Robotics Fabrication Bay">
+                    <div class="laser-scanner"></div>
+                </div>
+                <div class="gallery-label">
+                    <span class="label-id">ENV_02</span>
+                    <span class="label-name">Automated Robotics Bay</span>
+                </div>
+            </div>
+
+            <div class="gallery-card">
+                <div class="gallery-img-container">
+                    <img src="images/LiDAR Matrix.png" alt="Spatial LiDAR Matrix">
+                    <div class="laser-scanner"></div>
+                </div>
+                <div class="gallery-label">
+                    <span class="label-id">ENV_03</span>
+                    <span class="label-name">Spatial LiDAR Point Cloud</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="research" class="research-team">
+        <div class="section-header" style="margin-bottom: 80px;">
+            <h2 class="section-title">Axiom Grid Leadership</h2>
+            <div class="section-meta">COGNITIVE ARCHITECTS / R&D DIVISION</div>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="profile-img">
+                    <img src="images/aristhorne.png" alt="Dr. Aris Thorne">
+                    <div class="img-overlay"></div>
+                </div>
+                <div class="profile-info">
+                    <div class="profile-role">DIRECTOR OF SPATIAL COMPUTING</div>
+                    <h3 class="profile-name">Dr. Aris Thorne</h3>
+                    <p class="profile-bio">Pioneered the conflict-free coordinate synchronization matrix used in the Nexus-3D engine.</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="profile-img">
+                    <img src="images/elenarostova.png" alt="Elena Rostova">
+                    <div class="img-overlay"></div>
+                </div>
+                <div class="profile-info">
+                    <div class="profile-role">LEAD NEURAL KINEMATICS</div>
+                    <h3 class="profile-name">Elena Rostova</h3>
+                    <p class="profile-bio">Architect of the real-time robotics pathing algorithms. Holds 14 patents in autonomous assembly.</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <div class="profile-img">
+                    <img src="images/marcusvance.png" alt="Marcus Vance">
+                    <div class="img-overlay"></div>
+                </div>
+                <div class="profile-info">
+                    <div class="profile-role">VP OF PHYSICAL INFRASTRUCTURE</div>
+                    <h3 class="profile-name">Marcus Vance</h3>
+                    <p class="profile-bio">Bridging the gap between digital multi-physics stress tests and concrete real-world deployments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <section id="system-status" class="telemetry-suite">
+        <div class="section-header">
+            <h2 class="section-title">System Status: Global</h2>
+            <div class="section-meta">LIVE_TELEMETRY / NETWORK_LOAD_BALANCING</div>
+        </div>
+
+        <div class="dashboard-container">
+            <div class="dashboard-left">
+                <div class="iso-grid-wrapper">
+                    <div class="iso-grid">
+                        <div class="node pulse-red" style="top: 20%; left: 30%;"></div>
+                        <div class="node pulse-white" style="top: 50%; left: 70%;"></div>
+                        <div class="node pulse-white" style="top: 80%; left: 40%;"></div>
+                        <div class="scan-bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-right">
+                <div class="stat-row">
+                    <div class="stat-item">
+                        <span class="stat-label">LATENCY</span>
+                        <span class="stat-value"><span id="tick-latency">12</span>ms</span>
+                    </div>
+                    <svg class="sparkline" viewBox="0 0 100 30">
+                        <path d="M0 25 L10 20 L20 28 L30 15 L40 22 L50 10 L60 18 L70 5 L80 15 L90 10 L100 20" fill="none" stroke="#D72638" stroke-width="1.5" />
+                    </svg>
+                </div>
+
+                <div class="stat-row">
+                    <div class="stat-item">
+                        <span class="stat-label">NODES_ONLINE</span>
+                        <span class="stat-value" id="tick-nodes">1,402</span>
+                    </div>
+                </div>
+
+                <div class="stat-row">
+                    <div class="stat-item">
+                        <span class="stat-label">THROUGHPUT</span>
+                        <span class="stat-value"><span id="tick-data">84.20</span>PB</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="contact" class="terminal-footer">
+        <div class="footer-hero">
+            <img src="images/AXIOMGRIDLOGO.png" alt="AXIOM GRID 3D LOGO" class="logo-3d">
+        </div>
+
+        <div class="terminal-container">
+            <div class="terminal-header">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="terminal-title">ACCESS_REQUEST.SH</span>
+            </div>
+            <div class="terminal-body">
+                <div class="input-line">
+                    <span class="prompt">root@axiom_grid:~$</span>
+                    <input type="text" placeholder="ENTER_NAME_" class="cli-input">
+                </div>
+                <div class="input-line">
+                    <span class="prompt">root@axiom_grid:~$</span>
+                    <input type="email" placeholder="ENTER_ENTERPRISE_EMAIL_" class="cli-input">
+                </div>
+                <div class="input-line">
+                    <span class="prompt">root@axiom_grid:~$</span>
+                    <textarea placeholder="DESCRIBE_PROJECT_SCOPE_" class="cli-input"></textarea>
+                </div>
+                <button class="terminal-btn">EXECUTE_SUBMISSION</button>
+            </div>
+        </div>
+
+        <div class="sitemap-grid">
+            <div class="sitemap-col">
+                <h4 class="col-title">INFRASTRUCTURE</h4>
+                <a href="#">Spatial Computing</a>
+                <a href="#">Neural Kinematics</a>
+                <a href="#">Global Backbone</a>
+            </div>
+            <div class="sitemap-col">
+                <h4 class="col-title">ENTERPRISE</h4>
+                <a href="#">Investor Relations</a>
+                <a href="#">API Documentation</a>
+                <a href="#">System Status</a>
+            </div>
+            <div class="sitemap-col">
+                <h4 class="col-title">OFFICES</h4>
+                <p class="address">LEVEL 84, TITAN TOWER<br>TOKYO CENTRAL DISTRICT</p>
+                <p class="address">SUITE 01, THE GRID<br>NEW YORK METRO</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span class="copyright">© 2026 AXIOM GRID. ALL SYSTEMS OPERATIONAL.</span>
+
+            <div class="dev-signature">
+        POWERED BY <span class="dev-name">Dev.OBS</span>
+       </div>
+            <span class="latency">LATENCY: 12ms</span>
+        </div>
+    </footer>
+
+
+   <script src="script.js"></script>
+</body>
+</html>
+
